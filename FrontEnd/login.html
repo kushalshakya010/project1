@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles-login.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- <img class="mp_logo" src="image/Templeguide_logo.png" alt="Logo" /> -->
+      <h2>TempleGuide</h2>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="photo">
+        <!-- You can replace this with your large photo -->
+        <img src="image/sign_in.jpg" alt="Large Photo" />
+      </div>
+      <div class="form">
+        <h1>Login To Temple Guide</h1>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="em"
+              name="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="psw"
+              name="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <p>Don't have an account? <a href="signup.html">SignUp here.</a></p>
+          <p><br /></p>
+          <input
+            type="submit"
+            id="loginbtn"
+            value="Login"
+            placeholder="Login"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="../backend/login.js" type="module"></script>
+  </body>
+</html>

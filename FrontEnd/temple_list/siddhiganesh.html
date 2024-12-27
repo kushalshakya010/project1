@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Information Page</title>
+    <link rel="stylesheet" href="styles-info.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="mp_header">
+      <!-- <img class="mp_logo" src="image/Templeguide_logo.png" alt="Logo" /> -->
+      <h2>TempleGuide</h2>
+
+      <nav class="mp_navbar">
+        <a href="../index.html">Home</a>
+        <a href="../planner.html">Planner</a>
+
+        <a id="mp_login" href="../login.html">Login</a>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------------------------information--------------------------------------------------------- -->
+    <div class="information">
+      <div class="one">
+        <h1 id="templeName">[] Siddhi Ganesh</h1>
+        <button id="to-go">Add to planner</button>
+      </div>
+      <hr />
+
+      <div class="img-feedback">
+        <div class="info-image">
+          <img src="../image/siddhiganesh.jpg" alt="SiddhiGanesh" />
+        </div>
+        <div class="info-feedback">
+          <form id="commenting">
+            <h4>Comments:</h4>
+
+            <input
+              type="text"
+              id="comment-sec"
+              name="comment"
+              placeholder="Write your comment...."
+            />
+            <button type="submit" id="commentBtn">Submit</button>
+            <hr />
+          </form>
+          <div class="info-feedback2">
+            <div class="allcmt">
+              <template id="cmtTemplate">
+                <div id="cmt1">
+                  <h4 id="cmtUserName">john:</h4>
+                  <p id="cmtInfo">very nice temple.</p>
+                </div>
+                <hr />
+              </template>
+              <div class="temple-list">
+                <div id="temp_list" class="temp_container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <p id="text">
+        Ganesh near Sohrakhutte Chowk in Kathmandu i.e. it is also called
+        Paknajol Ganesh, Siddhi Ganesh. The pearl of Ganesha here is black which
+        is adorned with silver. In front of the statue of Ganesha, there is a
+        statue of a mouse and a mole. The idol of Ganesha is very attractive. In
+        this Ganesh temple complex, there are idols of various deities including
+        idols of Saraswati and Hanuman. On Tuesday, there is a huge crowd of
+        devotees in this Ganesha temple.
+      </p>
+
+      <br /><br />
+
+      <div class="column">
+        <div class="x">
+          <div>
+            <div>
+              <h1>History</h1>
+              <hr />
+              <p id="text">
+                Siddhi Ganesh temple was established in 1888 AD by the Newar
+                communities for their good health and prosperity. The temple
+                lies in the heart of old Newar town Nagadesh. The temple covers
+                an area of six annas where a separate building has been built
+                for devotees to stay in night and chant hymns. The temple is
+                also decorated with idols of Siddhi Ganesh, Shesh Narayan, Astha
+                Matrika and others. A visit to Siddhi Ganesh temple will allow
+                one to see the rarely visited alleys of this ancient Newari
+                town.
+              </p>
+            </div>
+          </div>
+
+          <br /><br />
+          <div>
+            <div>
+              <h1>Festival</h1>
+              <hr />
+              <p id="text">
+                It is basically Ganesh mandir thus festivals related to hindu
+                and Ganesh are celebrated.
+              </p>
+            </div>
+          </div>
+
+          <br /><br />
+          <div></div>
+        </div>
+        <div class="y">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1BINR8f37v_Jn7q8TXhCJz4feyzG6c3w&ehbc=2E312F"
+            width="100%"
+            height="500px"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- Footer------------------------------------------------------------ -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">Temple Guide</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #b25300; height: 2px"
+              />
+              <p>
+                Thank you for visiting Temple Gudie. We appreciate your interest
+                in our application. If you have any questions or feedback,
+                please don't hesitate to contact us.
+              </p>
+              <p>Have a great day!</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold"></h6>
+
+              <img
+                id="footerlogo"
+                src="../image/Templeguide_logo.png"
+                alt="Logo"
+              />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Social links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #b25300; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Facebook</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Instagram</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Linkedin</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #b25300; height: 2px"
+              />
+              <p>
+                <i class="fas fa-home mr-3"></i> Deerwalk Institute of
+                Technology, Kathmandu
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> kushalshakya00@gmail.com
+              </p>
+              <p><i class="fas fa-phone mr-3"></i> +977-9840034062</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="index.html">TempleGuide</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../backend/temple.js" type="module"></script>
+  </body>
+</html>

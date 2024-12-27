@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
+
+:root{
+    --orange: #b25300;
+    --black:#130f40;
+    --light-orange:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hideen;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+/* --------------------------------------------- NAVBAR ---------------------------------------------------- */
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+   height: 20px;
+}
+#login{
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+    color: var(--orange);
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+
+body {
+  
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 500px;
+}
+
+.container {
+    display: flex;
+    margin-top: 80px;
+    height: 700px;
+    width: 100%; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.photo {
+    flex: 2;
+    box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    flex: 3;
+    padding: 130px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginbtn {
+    background-color: var(--orange);
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+#loginbtn:hover {
+    background-color: rgb(200, 93, 0);
+    /* color: #5f1900; */
+    transform: scale(1.03);
+    
+}
